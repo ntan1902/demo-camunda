@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo-camunda
+
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      password: demo
+    filter:
+      create: All tasks
+    generic-properties:
+      properties:
+        enforceHistoryTimeToLive: false
+    deployment-resource-pattern: classpath:processes/*
